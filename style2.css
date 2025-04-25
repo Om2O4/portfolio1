@@ -1,0 +1,294 @@
+/* Basic Reset & Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9; /* Default background */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header & Navigation (No Changes) */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #555;
+    border-radius: 4px;
+    color: #eee;
+}
+
+
+/* Sections */
+.section {
+    padding: 60px 0;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* **** UPDATED: Define alt-bg style explicitly **** */
+.alt-bg {
+    background-color: #fff; /* Alternate background color */
+}
+
+/* About Me Section (No Changes) */
+#about .about-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#about .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+}
+
+/* Certifications List Styling (No Changes) */
+#certifications ul {
+    list-style: none;
+    padding-left: 0;
+}
+#certifications li {
+    background-color: #e9e9e9; /* Background for items within the alt-bg section */
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #555;
+}
+#certifications li strong {
+    color: #333;
+    font-size: 1.1em;
+}
+#certifications li em {
+    font-size: 0.9em;
+    color: #666;
+    display: block;
+    margin-top: 5px;
+}
+
+
+#education .education-item {
+    background-color: #ffffff; /* White background for items in default-bg section */
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#education .education-item h3 {
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+#education .education-item .institution {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 3px;
+}
+
+#education .education-item .duration {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+#education .education-item .details {
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.5;
+}
+
+#education .education-item .details em {
+     /* Keep details italic or change if needed */
+    font-style: italic;
+}
+/* **** END ADDED Education Section Styling **** */
+
+
+/* Resume Section Styling */
+#resume .button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+#resume .button:hover {
+    background-color: #555;
+}
+/* Highlights styling moved to its own block */
+.resume-highlights {
+    margin-top: 30px;
+    background: #e9e9e9; /* Background for highlights within the alt-bg section */
+    padding: 20px;
+    border-radius: 5px;
+}
+.resume-highlights h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+.resume-highlights ul {
+     list-style: none;
+     padding-left: 0;
+}
+.resume-highlights li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fdfdfd; /* Slightly different background for list items inside highlights */
+    border-left: 3px solid #555;
+    border-radius: 3px;
+}
+
+
+/* Contact Section Styling */
+#contact .contact-links {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+#contact .contact-links li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+#contact .contact-links a {
+    color: #0077cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+#contact .contact-links a:hover {
+    color: #005fa3;
+    text-decoration: underline;
+}
+/* Optional Contact Form Styling */
+#contact form {
+    max-width: 600px;
+    margin: 30px auto 0;
+    padding: 20px;
+    background: #ffffff; /* White background for form in default-bg section */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+#contact form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+#contact form textarea {
+    resize: vertical;
+}
+#contact form button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+#contact form button:hover {
+     background-color: #555;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #333; /* Keep footer dark */
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design (No Changes needed here for the new section, existing rules apply) */
+@media (max-width: 768px) {
+    nav { flex-direction: column; align-items: center; }
+    nav .logo { margin-bottom: 10px; }
+    nav ul { padding-left: 0; justify-content: center; flex-wrap: wrap; }
+    nav ul li { margin: 0 10px 10px 10px; }
+    .section h2 { font-size: 2rem; }
+    #about .about-content { flex-direction: column; text-align: center; }
+    #about .profile-pic { margin-bottom: 20px; }
+}
+@media (max-width: 480px) {
+    nav .logo { font-size: 1.3rem; }
+    nav ul li { margin: 0 5px 10px 5px; }
+    nav ul li a { padding: 5px; }
+}
